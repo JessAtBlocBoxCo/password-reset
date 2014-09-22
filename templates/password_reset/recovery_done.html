@@ -3,7 +3,9 @@
 {% block title %}{% trans "New password set" %}{% endblock %}
 
 {% block passwordresetcontent %}
-	<p>{% trans "Your password has successfully been reset. <br> You can use it right now on the <a href="/login/">login</a> page." %}</p>
+	<p>{% trans "Your password has successfully been reset. <br> You can use it right now on the %} 
+		<a href="/login/">login</a> {% trans "page." %}
+	</p>
 	
 	<!--note: the text between trans tags cannot be put on two lines.. i think this is to translate it to different languages -->				
 							
