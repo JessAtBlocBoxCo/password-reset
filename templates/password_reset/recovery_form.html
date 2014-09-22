@@ -6,13 +6,13 @@
 
 {% block passwordresetcontent %}
   		<h3>Recover Your Password</h3>
-			<h6><a href="/signup/">Create a new account</a></h5>
-			<h6><a href="/beta/">Return to the homepage (Beta)</a></h5>
+			<h6><a href="/signup/">Create a new account</a></h6>
+			<h6><a href="/beta/">Return to the homepage (Beta)</a></h6>
 			
 			
 	<form class="form-inline" role="form" method="post" action="{{ url }}">
 		{% csrf_token %}
-		{{ form.as_p }} <!--this grabs the form from forms.py -->
+
 		
 		<div class="form-group">
 			<input type="email" class="form-control" name="email" id="id_email"  placeholder="Enter Email">	
@@ -25,12 +25,10 @@
 	</form> 
 {% endblock %}
 
-
-<!--
-				<div class="form-group"> 
- 						<label for="id_state" class="col-sm-3">State</label>	
- 						<div class="col-sm-9">
-    					<input type="text" class="form-control" name="state" id="id_state"  placeholder="State">		
-    				</div>		
- 				</div>
--->
+		<!--old versionm just had: 
+		
+		{{ form.as_p }} 
+		
+		after csrf_toke line
+		-->
+		
