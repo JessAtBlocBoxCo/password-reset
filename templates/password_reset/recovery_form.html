@@ -13,6 +13,7 @@
 	<form class="form-inline" role="form" method="post" action="{{ url }}">
 		{% csrf_token %}
 
+	{{ form.as_p }} 
 		
 		<div class="form-group">
 			<input type="email" class="form-control" name="email" id="id_email"  placeholder="Enter Email">	
